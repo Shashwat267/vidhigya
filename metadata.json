@@ -1,0 +1,7 @@
+{
+  "name": "Vidhigya - Your Legal Companion",
+  "description": "An AI-powered legal companion for Indians that demystifies civil rights, simplifies legal jargon, and connects users with local advocates.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
