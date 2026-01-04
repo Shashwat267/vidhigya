@@ -1,4 +1,5 @@
-import { GoogleGenAI, Chat, GenerativeModel } from "@google/genai";
+
+import { GoogleGenAI, Chat } from "@google/genai";
 import { Coordinates, Message } from "../types";
 
 // Initialize Gemini Client
@@ -97,7 +98,8 @@ export const simplifyLegalText = async (
   }
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash', // Fast and efficient for summarization, supports multimodal
+    // Using gemini-3-flash-preview for text-heavy simplification tasks
+    model: 'gemini-3-flash-preview',
     contents: { parts },
     config: {
       systemInstruction: SYSTEM_INSTRUCTION_SIMPLIFIER,
@@ -128,7 +130,8 @@ export const findLawyersInArea = async (query: string, location?: Coordinates) =
   }
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash', // Flash is sufficient for grounding tasks
+    // Maps grounding is only supported in Gemini 2.5 series models.
+    model: 'gemini-2.5-flash',
     contents: prompt,
     config: config
   });
