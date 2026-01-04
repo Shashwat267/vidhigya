@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const ScaleIcon = ({ className }: { className?: string }) => (
@@ -30,6 +31,18 @@ export const MenuIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+export const SunIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+  </svg>
+);
+
+export const MoonIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+  </svg>
+);
+
 export const ShieldCheckIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/>
@@ -54,19 +67,18 @@ export const CheckBadgeIcon = ({ className, ...props }: React.SVGProps<SVGSVGEle
   </svg>
 );
 
+export const ChevronLeftIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="m15 18-6-6 6-6"/>
+  </svg>
+);
+
 export const VidhigyaLogo = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className={className} fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
-    {/* Shield Outline */}
     <path d="M50 95 C 50 95, 90 75, 90 40 V 15 L 50 5 L 10 15 V 40 C 10 75, 50 95, 50 95 Z" strokeWidth="5" />
-    
-    {/* Scales of Justice Inside */}
-    {/* Center Pillar */}
     <line x1="50" y1="25" x2="50" y2="75" />
-    {/* Balance Beam */}
     <line x1="25" y1="35" x2="75" y2="35" />
-    {/* Left Scale */}
     <path d="M25 35 L 15 55 C 15 62, 35 62, 35 55 L 25 35" strokeWidth="3" fill="none"/>
-    {/* Right Scale */}
     <path d="M75 35 L 65 55 C 65 62, 85 62, 85 55 L 75 35" strokeWidth="3" fill="none"/>
   </svg>
 );
